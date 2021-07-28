@@ -20,6 +20,7 @@ header a {
 
 footer{
 background-color: rgb(226, 29, 29);
+padding: 20px;
 }
 header button{
     background-color: chartreuse;
