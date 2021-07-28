@@ -9,6 +9,10 @@ justify-content: space-between;
 align-items: center;
 padding: 10px;
 }
+h1,h2,figcaption{
+    font-family: 'Balsamiq Sans', cursive;
+}
+
 header a {
     color: brown;
     text-decoration: none;
@@ -39,6 +43,7 @@ button a{
     min-height: 105vh;
     background-image:linear-gradient(to top, #000, rgba(0, 0, 0, 0)) , url(qqq.webp);
     background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,11 +53,70 @@ button a{
 .hero p{
     max-width: 700px;
     color: deeppink;
-    front-size: 20px;
+    font-size: 20px;
 }
 h1{
     color: ghostwhite;
     margin-bottom: 30px;
+}
+.gun{
+    padding: 50px 20px;
+    background-color: blue;
+}
+img{
+    max-width: 100%;
+}
+.guns-wrapper{
+    display:flex;
+    justify-content: space-between;
+}
+figure{
+    width:22%;
+    background-color: blue;
+    padding: 20px 10px;
+    position: relative;
+}
+figcaption{
+    position: absolute;
+    bottom: 20px;
+}
+@media(max-width: 920px){
+    header{
+        display: block;
+        text-align: center;
+    }
+    nav{
+        margin: 25px 0;
+
+    }
+    nav a{
+        display:block;
+    }
+    @media(max-width: 760px){
+        .guns-wrapper{
+            flex-wrap:wrap;
+        }
+        figure{
+            width: 45%;
+        }
+    }
+        
+    
+
+}
+@media(max-width: 550px){
+    h1{
+        font-size: 20px;
+    }
+    .hero p{
+        font-size: 18px;
+    }
+}
+figure{
+    width: 70%;
+}
+.guns-wrapper{
+    justify-content: center;
 }
 
 
